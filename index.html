@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FTTH Packages</title>
+  <style>
+    :root {
+      --cherry-blossom: #ffb7c5;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--cherry-blossom);
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(90deg, var(--cherry-blossom), #ff7f9c);
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255,183,197,0.6);
+      text-shadow: 1px 1px 3px #c2185b, 0 0 10px white;
+    }
+    nav {
+      background-color: #ff9db2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(255, 183, 197, 0.3);
+    }
+    nav a {
+      color: white;
+      padding: 1em;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s, color 0.3s;
+      flex: 1 1 120px;
+      text-align: center;
+      text-shadow: 1px 1px 2px #c2185b, 0 0 6px white;
+    }
+    nav a:hover {
+      background-color: #ff7f9c;
+      color: white;
+      box-shadow: 0 0 10px rgb(247, 245, 245);
+    }
+    main {
+      padding: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5em;
+    }
+    .category {
+      background-color: #fff0f4;
+      padding: 1.5em;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(255, 251, 254, 0.774);
+      transition: transform 0.3s, box-shadow 0.3s;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #333;
+      text-shadow: 1px 1px 2px #f377a8, 0 0 6px white;
+    }
+    .category:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,183,197,0.8);
+    }
+    .category h2 {
+      margin-bottom: 0.8em;
+      color: #c218a0;
+      text-shadow: 2px 2px 3px #efd4e0, 0 0 10px white;
+    }
+    .category p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fiber Internet Packages</h1>
+  </header>
+  <nav>
+    <a href="#basic">Basic</a>
+    <a href="#standard">Standard</a>
+    <a href="#premium">Premium</a>
+    <a href="#business">Business</a>
+    <a href="#gamer">Gamer</a>
+    <a href="#ultimate">Ultimate</a>
+  </nav>
+  <main>
+    <section id="basic" class="category">
+      <h2>Basic</h2>
+      <p>Up to 30 Mbps download speed. Ideal for casual browsing and email.</p>
+    </section>
+    <section id="standard" class="category">
+      <h2>Standard</h2>
+      <p>Up to 50 Mbps. Great for small households and streaming.</p>
+    </section>
+    <section id="premium" class="category">
+      <h2>Premium</h2>
+      <p>Up to 100 Mbps. Stream, game, and work from home with ease.</p>
+    </section>
+    <section id="business" class="category">
+      <h2>Business</h2>
+      <p>Up to 200 Mbps. Reliable speeds for small business needs.</p>
+    </section>
+    <section id="gamer" class="category">
+      <h2>Gamer</h2>
+      <p>Low latency and high-speed for the ultimate gaming experience.</p>
+    </section>
+    <section id="ultimate" class="category">
+      <h2>Ultimate</h2>
+      <p>Up to 1 Gbps. Maximum speed and performance for large families or businesses.</p>
+    </section>
+  </main>
+</body>
+</html>
